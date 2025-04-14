@@ -34,7 +34,7 @@ def indexflask(form):
 
 def petcalc(Ta, RH, Ws, year, month, day, hour,location):    
 
-    Fside,Fup,Fcyl = 0.22,0.06,0.28 #Ståendes vid Liggande:    Fside,Fup,Fcyl = 0.166666, 0.166666, 0.2
+    Fside,Fup,Fcyl = 0.22,0.06,0.28 #Ståendes. Vid Liggande:    Fside,Fup,Fcyl = 0.166666, 0.166666, 0.2
     
     Tmrt = so.Solweig1D_2020a_calc(Fside, Fup, Fcyl,location,Ta, RH, year, month, day, hour,minu=30)
 
