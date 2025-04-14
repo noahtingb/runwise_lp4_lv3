@@ -1,3 +1,4 @@
+"""Adjusted code by noahtingb, orginally based on biglimp:s PETCalculatorWEB"""
 import numpy as np
 import datetime
 
