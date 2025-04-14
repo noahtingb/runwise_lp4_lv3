@@ -1,5 +1,7 @@
+'''A lower controll function for the PET Calculation'''
 import koden.Solweig as so
 import koden.PET_calculations as p
+__author__="noahtingb"
 
 def indexflask(form):
         month = int(form["month"])
