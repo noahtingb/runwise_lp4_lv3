@@ -1,32 +1,5 @@
 """Adjusted code by Fredrik Lindberg, orginally from Dag Wastberg, Rambolls"""
-
 import numpy as np
-from collections import namedtuple
-
-PET_person=namedtuple("PET_person","mbody age height activity sex clo")
-
-
-def calculate_PET_index(Ta, Pa, Tmrt, va, pet):
-    mbody=pet.mbody
-    age=pet.age
-    height=pet.height
-    activity=pet.activity
-    sex=pet.sex
-    clo=pet.clo
-    pet_index=np.zeros_like(Tmrt)
-    for x in range(pet_index.shape[0]):
-        for y in range(pet_index.shape[1]):
-            pet_index[x][y]=_PET(Ta[x],Pa[x],Tmrt[x][y],va[x][y],mbody,age,height,activity,clo,sex)
-
-def calculate_PET_index_vec(Ta, Pa, Tmrt, va,pet):
-    mbody=pet.mbody
-    age=pet.age
-    height=pet.height
-    activity=pet.activity
-    sex=pet.sex
-    clo=pet.clo
-
-    pet_index=_PET(Ta,Pa,Tmrt,va,mbody,age,height,activity,clo,sex)
 
 def _PET(ta,RH,tmrt,v,mbody,age,ht,work,icl,sex):
     """
