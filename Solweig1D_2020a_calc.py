@@ -785,10 +785,7 @@ def Solweig_2015a_metdata_noload(year,doy,hour,minu, location, UTC=0):
 def Solweig1D_2020a_calc(Fside, Fup, Fcyl,
                         location, Ta, RH, 
                         year, month, day, hour, minu):
-    Fside, Fup, Fcyl=Fside, Fup, Fcyl
-    location= location
-    Ta, RH=Ta, RH/100
-    year, month, day, hour, minu=year, month, day, hour, minu
+    RH*= 1e-2
     # Meteorological data, Should maybe be move out later on.
     #day of year
     if (year % 4) == 0 and ( ((year % 100)==0 and (year % 400) == 0) or ((year % 100)!=0)):
