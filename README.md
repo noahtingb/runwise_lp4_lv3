@@ -1,2 +1,3 @@
 # Runwise
-Bachelor Thesis - Chalmers 2025
+Bachelor Thesis - Chalmers 2025 \
+old name: runwise
